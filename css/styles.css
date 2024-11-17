@@ -1,0 +1,360 @@
+
+
+body {
+    margin: 0px auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+/* Stylos para toda la cabecera*/
+.cabezera {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: auto;
+    background:  #A3A656;
+    padding-right: 10px;
+    padding-left: 70px;
+}
+
+.usuario-idioma {
+    display: flex;
+    align-items: center;
+}
+
+.usuario-idioma #usuario {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.usuario-idioma #idioma {
+    display: flex;
+    align-items: center;
+}
+
+.usuario-idioma #usuario img {
+    margin-right: 10px;
+}
+
+.usuario-idioma #idioma #bandera {
+    margin: 0px 10px 0px 10px;
+}
+  
+
+.usuario-idioma #idioma span, .usuario-idioma #usuario span {
+    font-size: 14px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.menu nav {
+    margin: 0px;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu nav ul li {
+    display: inline-block;
+}
+
+.menu nav ul li a {
+    color: hsl(0, 100%, 0%);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.menu ul li a:hover {
+    color: #FFFF00;
+}
+
+/* Estilos para la imagen principal */
+
+.pantalla-main {
+    display: flex;
+    width: auto;
+}
+
+.pantalla-main img {
+    width: 100%;
+    height: auto;
+}
+
+.pantalla-main .texto-imagen {
+    display: flex;
+    flex-direction: column;
+    height: 704px;
+    width: 600px;
+    justify-content: center;
+    left: 12%;
+}
+
+.pantalla-main .texto-imagen {
+    position: absolute;
+}
+
+.pantalla-main .texto-imagen h1 {
+    display: flex;
+    font-size: 96px;
+    font-weight: normal;
+    font-family: 'Romanesco', cursive;
+    margin: 0px 0px 50px 0px;
+}
+
+.pantalla-main .texto-imagen h2 {
+    display: flex;
+    font-weight: 600;
+    font-size: 32px; 
+    margin: 0px;
+}
+
+/* Estilos para la segunda cabecera*/
+
+.segundo-header {
+    display: flex;
+    background:   #F2F6F6;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.segundo-header .reservar-cita, .segundo-header .codigo-promocional {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.segundo-header .reservar-cita input, .segundo-header .codigo-promocional input {
+    margin-left: 15px;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.segundo-header .codigo-promocional input::placeholder {
+    padding-left: 20px;
+}
+
+/* Estilos para las cards de masajes */
+
+.cards-masajes {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    align-items: center;
+    justify-content: center;
+    gap: 134px;
+    height: 642px;
+    width: auto;
+}
+
+.card  {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.card .titulo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 15px 15px 0 0;
+    background: #A3A656;
+    height: 80px;
+}
+
+.card .titulo-card h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0px;
+}
+
+
+.card .boton-reservar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 45px;
+    width: 150px;
+    border-radius: 35px;
+    background: #A3A656;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.card .boton-reservar:hover {
+    background:  #384001;
+}
+
+.card .descripcion {
+    font-size: 16px;
+    word-wrap: break-word;
+    margin: 10px;
+}
+
+.card .precio {
+    display: flex;
+    justify-content: left;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.card .precio-boton {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+/* Estilos para las cards de las promociones*/
+.subscripciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  #F2F6F6;
+    height: 770px;
+    width: auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.subscripciones h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0px;
+}
+.card-suscripcion {
+    display: grid;
+    grid-template-columns: repeat(3, 257px);
+    align-items: center;
+    justify-content: center;
+    gap: 134px;
+    height: 683px;
+    width: auto;
+}
+
+.card-suscripcion .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+}
+
+.card-suscripcion h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0px;
+}
+
+.card-suscripcion .card .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 233px;
+    height: 233px;
+    border: 12px solid #384001;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.card-suscripcion .card .boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 55px;
+    width: auto;
+    border-radius: 35px;
+    background: #A3A656;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.card-suscripcion .card .boton:hover {
+    background:  #384001;
+} 
+
+
+.card-suscripcion .card .descripcion {
+    display: flex;
+    justify-content: center;
+    height: 86px;
+}
+
+/* Estilos para el pie de pagina*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #384001;
+    height: 97px;
+    width: auto;
+    padding: 0px 0px 0px 70px;
+}
+
+.footer .redes-sociales {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer .redes-sociales span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #A3A656;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.footer .redes-sociales img {
+    display: flex;
+    margin-right: 25px;
+}
+
+.footer .menu-footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer .menu-footer nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer .menu-footer nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+.footer .menu-footer nav ul li a {
+        text-decoration: none;
+        color:  #A3A656;
+        font-size: 16px;
+        text-transform: uppercase;
+}
+
+.footer .menu-footer nav ul li a:hover {
+    color: #FFFF00;
+}
